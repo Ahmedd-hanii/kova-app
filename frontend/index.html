@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This line is mandatory for responsive mobile layouts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kova | Speciality coffee & Roasters </title>
+    
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+   <!-- Top Announcement Bar -->
+  <div class="top-banner">
+    <p>COMPLIMENTARY ROASTERY SHIPPING ON ORDERS OVER $45</p>
+  </div>
+
+  <!-- Semantic Landmark: Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">KOVA</a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Semantic Landmark: Navigation -->
+      <nav class="nav-menu" id="primaryNav">
+        <ul class="nav-links">
+          <li><a href="#overview">Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact" class="nav-cta">Order Ahead</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Macro Layout: CSS Grid Container -->
+  <div class="app-layout">
+
+    <!-- Semantic Landmark: Sidebar / Secondary Context -->
+    <aside class="side-panel">
+      <div class="panel-section">
+        <h3 class="panel-heading">Kova Roastery</h3>
+        <p class="panel-desc">Sustainably sourced, single-origin beans roasted daily in small batches.</p>
+      </div>
+
+      <div class="panel-section">
+        <span class="filter-label">Filter Offerings</span>
+        <div class="filter-buttons">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="brew">Hot Brews</button>
+          <button class="chip" data-filter="cold">Cold Bar</button>
+        </div>
+      </div>
+
+      <div class="status-badge">
+        <span class="status-title">Daily Hours</span>
+        <p>Mon – Sun: 7:00 AM – 12:00 AM</p>
+      </div>
+    </aside>
+    <!-- Semantic Landmark: Main Narrative -->
+    <main class="main-content">
+      
+        <!-- Hero Section -->
+        <section class="hero-section" id="overview">
+          <span class="badge">Artisanal Coffee & Roastery</span>
+          <h1 class="hero-title">Warmth in Every Pour. Grounded in Quality.</h1>
+          <p class="hero-copy">
+            Welcome to Kova. We craft intentional coffee experiences with mindful sourcing, 
+            precision roasting, and a neighborhood space designed to slow down.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-solid">Explore Menu</a>
+            <button class="btn btn-outline" id="checkBtn">Barista Status</button>
+          </div>
+        </section>
+  
+        <!-- Card Grid Section -->
+        <section class="cards-section" id="menu">
+          <h2 class="section-title">Seasonal Selections</h2>
+          <div class="cards-grid" id="cardsGrid">
+  
+            <article class="card" data-category="brew">
+              <header class="card-header">
+                <span class="card-step">Signature Warm</span>
+                <h3 class="card-title">Mocha Mousse Roast</h3>
+              </header>
+              <p class="card-text">
+                Rich espresso with velvety steamed milk, dark chocolate undertones, and brown sugar notes.
+              </p>
+              <footer class="card-footer">
+                <span class="tag">Single Origin</span>
+              </footer>
+            </article>
+  
+            <article class="card" data-category="cold">
+              <header class="card-header">
+                <span class="card-step">Cold Bar</span>
+                <h3 class="card-title">Ethereal Cold Brew</h3>
+              </header>
+              <p class="card-text">
+                Steeped for 18 hours for balanced citrus brightness, crisp body, and zero lingering bitterness.
+              </p>
+              <footer class="card-footer">
+                <span class="tag">Slow Brewed</span>
+              </footer>
+            </article>
+  
+            <article class="card" data-category="brew">
+              <header class="card-header">
+                <span class="card-step">Pour Over</span>
+                <h3 class="card-title">Moonlit Reserve Flat White</h3>
+              </header>
+              <p class="card-text">
+                Double ristretto paired with silky micro-foam, delicate nutty aromatics, and a rounded finish.
+              </p>
+              <footer class="card-footer">
+                <span class="tag">House Favorite</span>
+              </footer>
+            </article>
+  
+          </div>
+        </section>
+  
+      </main>
+    </div>
+  
+    <!-- Semantic Landmark: Terminal Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Kova Coffee Roasters. Crafted with care.</p>
+        <span class="footer-status" id="liveStatus">Barista Bar: Taking Orders</span>
+      </div>
+    </footer>
+  
+    <script src="script.js"></script>
+
+</body>
+</html>
